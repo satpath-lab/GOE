@@ -85,7 +85,7 @@ GROQ_API_KEY=gsk_xxx python3 python/ingest.py
 
 
 
-## Strategic Roadmap: The Evolution of Global Foresight
+## Strategic Roadmap: The Evolution of GOE
 
 While the Global Ontology Engine is fully functional for real-time strategic monitoring, we are continuously expanding the system to reach deeper layers of global intelligence. Future updates will focus on moving from "Observation" to "Active Intelligence Infiltration."
 
