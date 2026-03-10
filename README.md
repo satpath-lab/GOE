@@ -74,5 +74,5 @@ GROQ_API_KEY=gsk_xxx python3 python/ingest.py
 ## Cron (Auto-sync every 15 min)
 
 ```bash
-*/15 * * * * GROQ_API_KEY=gsk_xxx php /path/to/goe/index.php api=ingest >> /var/log/goe.log 2>&1
+*/15 * * * * GROQ_API_KEY=gsk_xxx php /path/to/goe/index.php?api=ingest >> /var/log/goe.log 2>&1
 ```
