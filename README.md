@@ -16,7 +16,7 @@ goe/
 ├── index.php              - Dashboard + JSON API router
 ├── api/
 │   ├── config.php         - Keys, models, constants (PHP 8.5 safe)
-│   ├── http.php           - HTTP helper - stream_context
+│   ├── http.php           - HTTP helper stream_context
 │   ├── graph.php          - Knowledge graph engine
 │   ├── groq.php           - Groq LLM client
 │   ├── sources.php        - PHP data ingestion (8 sources)
