@@ -8,7 +8,29 @@ export GROQ_API_KEY=gsk_your_key_here
 php -S localhost:8080
 
 
-## Data Sources (All Free)
+
+## File Structure
+
+```
+goe/
+├── index.php              ← Dashboard + JSON API router
+├── api/
+│   ├── config.php         ← Keys, models, constants (PHP 8.5 safe)
+│   ├── http.php           ← HTTP helper — stream_context
+│   ├── graph.php          ← Knowledge graph engine
+│   ├── groq.php           ← Groq LLM client
+│   ├── sources.php        ← PHP data ingestion (8 sources)
+│   └── intelligence.php   ← World Brief, NL Query, CII
+├── python/
+│   └── ingest.py          ← Deep Python ingestion (more sources, multilingual)
+├── data/
+│   ├── graph.json         ← Live knowledge graph
+│   └── last_ingest.json   ← Last ingest stats
+└── cache/                 ← HTTP + Groq response cache
+```
+
+
+## Data Sources
 
 | Source | Domain | Notes |
 |--------|--------|-------|
