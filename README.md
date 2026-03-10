@@ -13,20 +13,20 @@ php -S localhost:8080
 
 ```
 goe/
-├── index.php              ← Dashboard + JSON API router
+├── index.php              - Dashboard + JSON API router
 ├── api/
-│   ├── config.php         ← Keys, models, constants (PHP 8.5 safe)
-│   ├── http.php           ← HTTP helper — stream_context
-│   ├── graph.php          ← Knowledge graph engine
-│   ├── groq.php           ← Groq LLM client
-│   ├── sources.php        ← PHP data ingestion (8 sources)
-│   └── intelligence.php   ← World Brief, NL Query, CII
+│   ├── config.php         - Keys, models, constants (PHP 8.5 safe)
+│   ├── http.php           - HTTP helper — stream_context
+│   ├── graph.php          - Knowledge graph engine
+│   ├── groq.php           - Groq LLM client
+│   ├── sources.php        - PHP data ingestion (8 sources)
+│   └── intelligence.php   - World Brief, NL Query, CII
 ├── python/
-│   └── ingest.py          ← Deep Python ingestion (more sources, multilingual)
+│   └── ingest.py          - Deep Python ingestion (more sources, multilingual)
 ├── data/
-│   ├── graph.json         ← Live knowledge graph
-│   └── last_ingest.json   ← Last ingest stats
-└── cache/                 ← HTTP + Groq response cache
+│   ├── graph.json         - Live knowledge graph
+│   └── last_ingest.json   - Last ingest stats
+└── cache/                 - HTTP + Groq response cache
 ```
 
 
@@ -39,7 +39,7 @@ goe/
 | The Hindu / ThePrint | India | RSS |
 | The Hacker News | Cyber | RSS |
 | GDELT DOC API | All | Real-time, global |
-| USGS Earthquakes | Climate | M4.0+, real-time |
+| USGS Earthquakes | Climate | M4.0+, realtime |
 | NASA EONET | Climate | Open events |
 | NIST NVD | Cyber | Critical CVEs |
 | World Bank | Economics | CPI inflation |
@@ -66,7 +66,6 @@ goe/
 ## Python Ingest (More Sources)
 
 ```bash
-# Install Python (no pip packages needed — stdlib only)
 GROQ_API_KEY=gsk_xxx python3 python/ingest.py
 ```
 
