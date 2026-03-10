@@ -102,7 +102,7 @@ class Sources {
             ['https://www.defenseone.com/rss/all/',                   'DefenseOne', 'en', 2],
             ['https://www.thedrive.com/the-war-zone/rss',             'WarZone',    'en', 2],
             // India
-            ['https://www.thehindu.com/news/international/?service=rss','The Hindu','en', 2],
+            ['https://www.thehindu.com/news/national/?service=rss','The Hindu','en', 2],
             ['https://www.theprint.in/feed/',                         'ThePrint',   'en', 2],
             // Cyber/Tech
             ['https://feeds.feedburner.com/TheHackersNews',           'HackersNews','en', 2],
