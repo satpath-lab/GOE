@@ -6,7 +6,7 @@ The Global Ontology Engine (GOE) functions as a “Digital Sovereign Brain” th
 
 ## Quick Start
 ```bash
-export GROQ_API_KEY=gsk_your_key_here
+export GROQ_API_KEY = gsk....
 
 php -S localhost:8080
 ```
