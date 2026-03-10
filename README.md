@@ -16,7 +16,7 @@ goe/
 ├── index.php              - Dashboard + JSON API router
 ├── api/
 │   ├── config.php         - Keys, models, constants (PHP 8.5 safe)
-│   ├── http.php           - HTTP helper — stream_context
+│   ├── http.php           - HTTP helper - stream_context
 │   ├── graph.php          - Knowledge graph engine
 │   ├── groq.php           - Groq LLM client
 │   ├── sources.php        - PHP data ingestion (8 sources)
@@ -38,7 +38,7 @@ goe/
 | DefenseOne / WarZone | Defense | RSS |
 | The Hindu / ThePrint | India | RSS |
 | The Hacker News | Cyber | RSS |
-| GDELT DOC API | All | Real-time, global |
+| GDELT DOC API | All | Realtime, global |
 | USGS Earthquakes | Climate | M4.0+, realtime |
 | NASA EONET | Climate | Open events |
 | NIST NVD | Cyber | Critical CVEs |
