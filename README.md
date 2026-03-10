@@ -45,7 +45,6 @@ goe/
 | World Bank | Economics | CPI inflation |
 | CelesTrak | Defense/Space | Satellite TLE |
 | Polymarket | Geopolitics | Prediction markets |
-| ACLED | Defense | Conflict (free reg) |
 
 ---
 
