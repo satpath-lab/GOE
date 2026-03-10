@@ -259,15 +259,15 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
   </div>
   <div class="tbm">
     <div class="tbs"><span class="pdot g"></span>LIVE</div>
-    <div class="tbs" id="tbs-upd"><strong id="upd-v"><?= $upd ? date('d M H:i', strtotime($upd)) : '—' ?></strong>&nbsp;SYNC</div>
+    <div class="tbs" id="tbs-upd"><strong id="upd-v"><?= $upd ? date('d M H:i', strtotime($upd)) : '-' ?></strong>&nbsp;SYNC</div>
     <div class="tbs"><strong id="tn"><?= $nc ?></strong>&nbsp;NODES</div>
     <div class="tbs"><strong id="te"><?= $ec ?></strong>&nbsp;EDGES</div>
     <div class="tbs"><strong id="tg"><?= count($geoNodes) ?></strong>&nbsp;GEO</div>
   </div>
   <div class="tbr">
-    <button class="btn btn-g" id="btn-sync" onclick="doSync()"> SYNC</button>
-    <button class="btn btn-a" id="btn-brief" onclick="doBrief()"> BRIEF</button>
-    <button class="btn btn-q" onclick="doStatus()"> STATUS</button>
+    <button class="btn btn-g" id="btn-sync" onclick="doSync()">SYNC</button>
+    <button class="btn btn-a" id="btn-brief" onclick="doBrief()">BRIEF</button>
+    <button class="btn btn-q" onclick="doStatus()">STATUS</button>
   </div>
 </nav>
 
@@ -376,7 +376,7 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
           <span class="tag mono" id="bmodel" style="font-size:7px"><?= MODEL_REASON ?></span>
         </div>
         <div class="cb">
-          <div class="rbox" id="bbox">Click <strong style="color:var(--g)">⚡ BRIEF</strong> to generate a live AI intelligence briefing from the knowledge graph.</div>
+          <div class="rbox" id="bbox">Click <strong style="color:var(--g)">BRIEF</strong> to generate a live AI intelligence briefing from the knowledge graph.</div>
         </div>
       </div>
     </div>
@@ -415,7 +415,7 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
 <div id="np" class="card">
   <div class="ch">
     <span class="ct" id="npt">Node Detail</span>
-    <button class="btn btn-q" style="padding:3px 8px;font-size:8px" onclick="$('np').classList.remove('show')">✕ Close</button>
+    <button class="btn btn-q" style="padding:3px 8px;font-size:8px" onclick="$('np').classList.remove('show')">Close</button>
   </div>
   <div class="cb" id="npb"></div>
 </div>
@@ -427,7 +427,7 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
     <div class="card">
       <div class="ch">
         <span class="ct">CII — 30 Countries</span>
-        <button class="btn btn-q" style="padding:3px 8px;font-size:8px" onclick="doCII()">↻ Compute</button>
+        <button class="btn btn-q" style="padding:3px 8px;font-size:8px" onclick="doCII()">Compute</button>
       </div>
       <div style="max-height:350px;overflow-y:auto">
         <table class="ciit">
@@ -450,7 +450,7 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
           <div class="ll"><span class="lts"><?= date('H:i:s') ?></span><span class="lm ok">GOE v<?= GOE_VER ?> · PHP <?= PHP_VERSION ?> · Zero deprecated warnings</span></div>
           <div class="ll"><span class="lts"><?= date('H:i:s') ?></span><span class="lm info">Graph: <?= $nc ?>N / <?= $ec ?>E / <?= count($geoNodes) ?> geo-points / <?= $st['cache'] ?> cached</span></div>
           <?php if (!$upd): ?>
-          <div class="ll"><span class="lts"><?= date('H:i:s') ?></span><span class="lm warn">No data — click ⟳ SYNC (runs in ~30s)</span></div>
+          <div class="ll"><span class="lts"><?= date('H:i:s') ?></span><span class="lm warn">No data — click SYNC (runs in ~30s)</span></div>
           <?php else: ?>
           <div class="ll"><span class="lts"><?= date('H:i:s') ?></span><span class="lm info">Last sync: <?= htmlspecialchars($upd) ?></span></div>
           <?php endif; ?>
@@ -604,7 +604,7 @@ function doSync() {
     loadFeed(curD);
     refreshMap();
   }).catch(err=>log(err.message,'err'))
-  .finally(()=>{ btn.disabled=false; btn.textContent='⟳ SYNC'; });
+  .finally(()=>{ btn.disabled=false; btn.textContent='SYNC'; });
 }
 
 
@@ -620,7 +620,7 @@ function doBrief() {
     $('bmodel').textContent = res.data.model||'';
     log(`Brief: ${res.data.tokens} chars`,'ok');
   }).catch(err=>{ box.classList.remove('load'); box.textContent='Error: '+err.message; log(err.message,'err'); })
-  .finally(()=>{ btn.disabled=false; btn.textContent='⚡ BRIEF'; });
+  .finally(()=>{ btn.disabled=false; btn.textContent='BRIEF'; });
 }
 
 //QUERY
