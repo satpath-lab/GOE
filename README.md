@@ -81,6 +81,10 @@ GROQ_API_KEY=gsk_xxx python3 python/ingest.py
 ```
 
 
+
+
+
+
 ## Strategic Roadmap: The Evolution of Global Foresight
 
 While the Global Ontology Engine is fully functional for real-time strategic monitoring, we are continuously expanding the system to reach deeper layers of global intelligence. Future updates will focus on moving from "Observation" to "Active Intelligence Infiltration."
@@ -103,5 +107,7 @@ Alternative Intelligence Pipelines: Continuous integration of proprietary and so
 
 ## Phase 3: Tactical Intervention Simulations
 Adversarial Logic Mapping: Modeling how different global actors respond to specific triggers, allowing for "What-If" scenario planning with 95%+ historical groundedness.
+
+---
 
 Note to Evaluators: Each of these modules is being developed with a focus on Data Sovereignty. To ensure these advanced extraction methods remain secure, updates are pushed to private branches and are only merged into the core engine after rigorous security auditing.
