@@ -57,7 +57,7 @@ goe/
 |-----|-------------|
 | `?api=status` | System stats |
 | `?api=ingest` | Pull all sources now |
-| `?api=brief` | AI World Brief (Groq 70b) |
+| `?api=brief` | AI World Brief (Llama 70b) |
 | `?api=query&q=...` | NL query over graph |
 | `?api=domain&d=defense` | Nodes by domain |
 | `?api=mapdata` | Geo-tagged nodes only |
