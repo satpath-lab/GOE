@@ -3,6 +3,11 @@
 
 The Global Ontology Engine (GOE) functions as a “Digital Sovereign Brain” that replaces fragmented databases and dashboards with a living, interconnected knowledge graph. Instead of analyzing isolated datasets, the system uses Semantic AI to map relationships across domains linking climate signals, trade shifts, geopolitical developments, cybersecurity activity, and security intelligence. By structuring global data into a unified ontology, GOE can detect how a climate disaster, policy decision, or economic shock in one region may trigger cascading effects in supply chains, political stability, or national security. This transforms scattered information into a coherent world model, allowing decision-makers to understand global dynamics as a single interconnected system rather than disconnected events.
 
+![](images/1.png)
+![](images/2.png)
+![](images/3.png)
+
+
 
 ## Quick Start
 ```bash
