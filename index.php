@@ -84,7 +84,7 @@ $byd      = $st['by_domain'];
 html{font-size:13.5px;scroll-behavior:smooth}
 body{background:var(--bg);color:var(--t0);font-family:var(--sans);line-height:1.55;min-height:100vh;overflow-x:hidden}
 body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.016) 0,rgba(0,0,0,.016) 1px,transparent 1px,transparent 3px);pointer-events:none;z-index:9998}
-::-webkit-scrollbar{width:3px;height:3px}::-webkit-scrollbar-track{background:var(--s1)}::-webkit-scrollbar-thumb{background:var(--s4)}
+::-webkit-scrollbar{width:10px;height:3px}::-webkit-scrollbar-track{background:var(--s1)}::-webkit-scrollbar-thumb{background:var(--s4)}
 .w{max-width:1700px;margin:0 auto;padding:0 16px}
 .g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
