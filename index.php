@@ -577,7 +577,7 @@ function renderFeed(nodes) {
   }
   $('elist').innerHTML = nodes.map(n=>`
     <div class="ei c-${n.severity||'low'}" onclick="showNode('${e(n.id||'')}')">
-      <span class="eiic">${n.icon||'PIN POINT'}</span>
+      <span class="eiic">${n.icon||'📌'}</span>
       <div>
         <div class="eiti">${e(String(n.title||'').slice(0,115))}</div>
         <div class="eime">
